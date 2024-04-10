@@ -72,13 +72,8 @@ class CRDSetup:
     def finish(user):
         if Autostart:
             os.makedirs(f"/home/{user}/.config/autostart", exist_ok=True)
- link1 = "login.aliexpress.com"
-            link2 = "https://www.google.com"  # Second tab opens Google
-            colab_autostart = f"""[Desktop Entry]
-Name=Example Autostart
-Exec=xdg-open '{link1}' && xdg-open '{link2}'
-Type=Application
-X-GNOME-Autostart-enabled=true"""
+            link = "login.aliexpress.com"
+            colab_autostart = """[Desktop Entry]
             print("Finalizing !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
 Type=Application
