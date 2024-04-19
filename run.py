@@ -48,10 +48,6 @@ class CRDSetup:
         subprocess.run(['apt', 'install', '--assume-yes', '--fix-broken'])
         print("Google Chrome Installed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
     
-    @staticmethod
-    def installTelegram():
-        subprocess.run(["apt", "install", "--assume-yes", "telegram-desktop"])
-        print("Telegram Installed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
     @staticmethod
     def changewall():
@@ -62,11 +58,6 @@ class CRDSetup:
         shutil.copy(custom_wallpaper_path, destination_path)
         print("Wallpaper Changed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
    
-    @staticmethod
-    def installQbit():
-        subprocess.run(["sudo", "apt", "update"])
-        subprocess.run(["sudo", "apt", "install", "-y", "qbittorrent"])
-        print("Qbittorrent Installed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
     @staticmethod
     def finish(user):
@@ -93,7 +84,7 @@ X-GNOME-Autostart-enabled=true""".format(link)
         os.system("service chrome-remote-desktop start")
         
         print("..........................................................") 
-        print(".....Brought By The Disala................................") 
+        print(".....Brought By The DL....................................") 
         print("..........................................................") 
         print(".....................#####......##........................") 
         print(".....................##..##.....##........................")  
